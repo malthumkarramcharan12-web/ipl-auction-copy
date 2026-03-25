@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Auction</title>
+<script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h2>{{ name }} | {{ team }}</h2>
+
+<div id="player">
+<h1 id="player-name">{{ player.name }}</h1>
+<h2>Base: {{ player.base }}</h2>
+</div>
+
+<h1 id="bid">Bid: {{ bid }}</h1>
+
+<button onclick="bid(25)">25L</button>
+<button onclick="bid(50)">50L</button>
+<button onclick="bid(100)">1Cr</button>
+<button onclick="bid(200)">2Cr</button>
+
+<br><br>
+
+<button onclick="nextPlayer()">Next Player</button>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
